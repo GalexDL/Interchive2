@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background:black;">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,7 @@
   <title>KOG Story</title>
   
   <style>
+
     #slider-container {
       text-align: center;
     }
@@ -50,26 +51,98 @@
     }
     
     #ThyR {
-      margin-left:400px;
       margin-top:-100px;
     }
     
     button {
-      margin-top: 120px;
+      margin-top: 220px;
+    }
+    
+    #previous {
+      
+      margin-left:0px; 
+      width:350px; 
+      display:flex; 
+      margin-bottom:-1050px; 
+      height:800px;
+      
+    }
+    
+    #next {
+      
+      margin-left:340px;
+      width:400px;
+      display:flex;
+      display:flex
+      margin-bottom:-860px;
+      height:800px;
+    }
+    
+    @media only screen and (max-width: 800px) {
+      #previous {
+        
+        margin-left:0px; 
+        width:350px; 
+        display:flex; 
+        margin-top:-700px; 
+        height:900px;
+        position:absolute;
+        border: none;
+        background-color: transparent;
+      }
+      
+      #next {
+        
+        margin-left:350px;
+        width:400px;
+        display:flex;
+        display:flex;
+        margin-top:-670px;
+        height:850px;
+        position:absolute;
+        border: none;
+        background-color: transparent;
+
+      }
+    }
+    
+    @media only screen and (min-width: 800px) {
+      #previous {
+        
+        margin-left:0px; 
+        width:750px; 
+        display:flex; 
+        margin-top:-670px; 
+        height:850px;
+        position:absolute;
+        border: none;
+        background-color: transparent;
+      }
+      
+      #next {
+        
+        margin-left:750px;
+        width:750px;
+        display:flex;
+        display:flex;
+        margin-top:-670px;
+        height:850px;
+        position:absolute;
+        border: none;
+        background-color: transparent;
+      }
     }
   </style>
   
 </head>
 <body>
-  <div id=ThyR>
-    <button onclick="prevImage()">Previous</button>
-    <button onclick="nextImage()">Next</button>
-  </div>
-  <label class="el-switch" style="margin-left:500px;>
-    <span class="margin-r">EN</span>
+
+    
+  <label class="el-switch" style="margin-left:500px; margin-bottom:-50px; display:flex;">
+    <span style="Color:cyan;">EN</span>
     <input type="checkbox" name="switch" onclick="toggleLanguage()">
     <span class="el-switch-style"></span>
-    <label style=Color:blue;>日本語</label>
+    <label style="Color:cyan;">日本語</label>
   </label>
   
   
@@ -81,7 +154,9 @@
     </div>
   </div>
   
+  <button onclick="prevImage()" id="previous"></button>
 
+  <button onclick="nextImage()" id="next"></button>
 
 
   
