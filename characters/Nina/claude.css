@@ -87,7 +87,8 @@ body#character-detail {
 /*nhaamãƒšãƒ¼ã‚¸*/
 
 body.nhaam {
-  background: url("https://dragalialost.com/assets/en-gb/images/pc/character/common/bg.jpg") no-repeat center top;
+  background: url("https://sjc1.vultrobjects.com/cucdn/gallery-38/art/kog-dragons-story-art.jpg") center top;
+  background-size:cover;
 }
 body.nhaam #wrapper #main{
   background-image: url("https://dragalialost.com/assets/en-gb/images/pc/character/nhaam/bg_band.png"),url("https://cdn.discordapp.com/attachments/1049465748537475072/1156970221526061056/Untitled43_20230928110615.png?ex=6516e7fc&is=6515967c&hm=cf780b0108381099c267396e3c4103855167b1a77fb52f673c85d322e79d7f4c&");
